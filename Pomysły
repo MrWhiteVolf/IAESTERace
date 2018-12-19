@@ -1,0 +1,60 @@
+IAESTE Race
+Pomsyły:
+
+Mapa z zaznaczonymi zespołami i celem podróży
+  - Obliczanie odległości od celu
+  - Obliczanie odległości od innego zespołu
+
+Czat między zespołami
+
+Zakładka 'Kontakt'
+  -telefony do organizatorów/koordynatorów/alaromwe w danym kraju
+  -adres miejsca docelowego
+
+Zakładka 'Zespoły'
+  -Informacja o innych zepspołach
+    // imiona nazwiska, zdjęcia, krótkie 'o sobie', telefony, aktualna lokalizacja
+    //odległość
+    //zdjęcia
+
+Zakładka 'Profil'
+  -Miejsce uzupełnienia informacji które wyświetlają się innym w zakładce 'Zespoły'
+
+Poradnik autostopowicza:
+  -Informacje które mogą się przydać na RACE, typu:
+    //Co zabrać
+    //Gdzie stać
+    //Gdzie spać
+    //Jak dbać o bezpieczeństwo
+
+Ciekawostki:
+  --Niewymagane, obejdzie sie, jak będzie to fajnie
+  -Ciekawostki o race jak i o samym komitecie
+  //Głownie moim zamysłem jest to, żeby ludzie którzy może będą spoza, mogli Nas poznać
+
+Ogłoszenia:
+  -Jakieś info ważne od organizatorów czy coś
+
+Technologie:
+  -Baza najprawdopodobniej MySQL albo MS MySQL
+  -Serwer Spring
+  -Front webowy raczej React, mobilny no to Androidowy
+
+UWAGI:
+Zwracać uwagę na przesył danych, jak najmniejszy, to co się da trzymać lokalnie po pobraniu bo roaming.
+//Czyli pewnie nie dajemy możliwości zmiany zdjęcia xD
+Pobieranie lokalizacji innych w takim razie co 1h albo po naciśnieciu przycisku. 
+Liczyć lokalnie co się da, nie będzie skomplikowanych obliczeń, a roaming.
+W przypadku wyłączonych danych, zbierać i aktualizować po podłączeniu do neta.
+Lokalki zczytywane jedynie z tel jednego z teamu, albo z obu tylko porównywane czy nie sa za daleko od siebie i alarmujace drugiego. (Zgubienie tel czy coś)
+Poradnik może być wbity na sztywno, raczej się nie będzie zmieniało nic.
+
+
+Rozwiazania:
+  -Logowanie tylko za pomocą maila @iaeste.pl z aktywacją konta przez kod w mailu
+  -Jeśli osoba spoz IAESTE może zostać zaproszona do zespołu przez członka org,
+  za pomocą maila
+  -Sprawdzanie lokalizacji: odczyt co 15 min, aktualizacja w bazie, w przypadku sprawdzenia
+  aktualnej/ostatniej pobierana jest ta z najpóźniejszym timestampem.
+  
+		

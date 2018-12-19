@@ -1,0 +1,13 @@
+TUDU DU:
+1)Projekt DB + implementacja
+	a)Projekt bazki +
+	b)Implementacja tabel w MySQL
+	c)Procedura zapisu profilu użytkownika
+	d)Procedura pobrania profilu użytkownika
+	e)Proceury tworzenia zespołu
+2)RESTowy serwis w springu do komunikacji z DB
+ 	a)Metody tworzenia zespołu
+	b)Metody tworzenia usera
+3)Logowanie + autoryzacja + uprawnienia
+4)WebApi
+5)AndroidApi
