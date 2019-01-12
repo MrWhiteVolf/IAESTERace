@@ -29,3 +29,4 @@ BEGIN
     select Id,Title from CURIOSITY;
 END //
 DELIMITER ;
+--
