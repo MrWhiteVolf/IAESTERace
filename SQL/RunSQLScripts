@@ -1,0 +1,7 @@
+mysql --user=test --password -s < CreateDatabaseTables.sql
+mysql --user=test --password -s < TeamProcedures.sql
+mysql --user=test --password -s < UserProcedures.sql
+mysql --user=test --password -s < LocalizationProcedures.sql
+mysql --user=test --password -s < CuriosityProcedures.sql
+mysql --user=test --password -s < ContactProcedures.sql
+mysql --user=test --password -s < ChatProcedures.sql
