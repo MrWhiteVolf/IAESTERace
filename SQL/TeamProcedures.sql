@@ -20,7 +20,13 @@ CREATE PROCEDURE TEAMGET()
 DROP PROCEDURE IF EXISTS GetTeamUsers;
 CREATE PROCEDURE GetTeamUsers
 (IN TeamId integer)
-BEGIN
-    select * from USER u where u.TeamId = TeamId;
-END //
+    BEGIN
+        select * from USER u where u.TeamId = TeamId;
+    END //
+
+DROP PROCEDURE IF EXISTS GetTeamsList;
+CREATE PROCEDURE GetTeamsList()
+    BEGIN
+        select Id, Name from TEAM;
+    END //
 DELIMITER ;

@@ -8,7 +8,8 @@ IN _Surname nvarchar(256),
 IN _Email nvarchar(256),
 IN _Phone integer,
 IN _AboutMe nvarchar(2048),
-IN _TeamId integer
+IN _TeamId integer,
+IN _Passwd nvarchar(256)
 )
 BEGIN
     INSERT INTO USER (Name,Surname,Email, Phone, AboutMe, TeamId)
@@ -22,5 +23,15 @@ CREATE PROCEDURE GetUser
 )
 BEGIN
     select * from USER where Id = _Id;
+END //
+
+DROP PROCEDURE IF EXISTS Login;
+CREATE PROCEDURE Login
+(
+IN _Email nvarchar(256)
+)
+BEGIN
+    select * from USER u where Email = _Email
+    left join TEAM t on t.Id = u.TeamId;
 END //
 DELIMITER ;

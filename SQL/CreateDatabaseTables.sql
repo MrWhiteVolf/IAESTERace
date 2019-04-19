@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS USER
   Phone integer NOT NULL,
   AboutMe nvarchar(2048) NULL,
   TeamId integer NOT NULL,
+  Password nvarchar(256),
   PRIMARY KEY (Id)
 );
 
@@ -19,6 +20,7 @@ CREATE TABLE IF NOT EXISTS TEAM
   Id integer NOT NULL AUTO_INCREMENT,
   Name nvarchar(256) NOT NULL,
   Description nvarchar(2048) NULL,
+  Password nvarchar(256) NULL,
   PRIMARY KEY (Id)
 );
 
